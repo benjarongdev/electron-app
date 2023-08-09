@@ -18,6 +18,7 @@ const config: ForgeConfig = {
           owner: 'benjarongdev',
           name: 'electron-app',
         },
+        authToken: "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"
       },
     },
   ],
