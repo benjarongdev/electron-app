@@ -10,6 +10,17 @@ import { mainConfig } from './webpack.main.config';
 import { rendererConfig } from './webpack.renderer.config';
 
 const config: ForgeConfig = {
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'benjarongdev',
+          name: 'electron-app',
+        },
+      },
+    },
+  ],
   packagerConfig: {
     asar: true,
   },
